@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+:root {
+  --primary-color: #ff873f;
+  --secondary-color: #ff9f3e;
+  --bg-color: #fff4f4;
+  --button-color: #ffffff;
+  --black-color: #333333;
+
+  --text-heading: clamp(1.25rem, 1.25rem + 2.0833vw, 3.125rem);
+  --text-sub-heading: clamp(1.125rem, 1.125rem + 1.25vw, 2.25rem);
+  --text-para: clamp(0.875rem, 0.875rem + 0.2778vw, 1.125rem);
+  --text-span: clamp(0.75rem, 0.75rem + 0.1389vw, 0.875rem);
+}
+
+/* Tampilan Mobile */
+.container {
+  padding: 0px 20px;
+}
+
+.hero {
+  background: rgb(255, 135, 63);
+  background: linear-gradient(
+    108deg,
+    rgba(255, 135, 63, 1) 0%,
+    rgba(255, 159, 62, 1) 100%
+  );
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.hero .container .cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.hero .container .cta > h1 {
+  font-size: var(--text-heading);
+  color: var(--button-color);
+}
+
+.hero .container .cta > p {
+  font-size: var(--text-para);
+  color: var(--button-color);
+}
+
+.hero .container .cta > a {
+  text-decoration: none;
+  background-color: var(--button-color);
+  color: var(--primary-color);
+  padding: 13px 20px;
+  border: 1px solid var(--button-color);
+  border-radius: 50px;
+  font-size: var(--text-para);
+  font-weight: 600;
+}
+
+.hero .container .cta > a:hover {
+  background-color: var(--primary-color);
+  color: var(--button-color);
+}
+
+.hero .container .gambar {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .container .gambar > img {
+  width: 90%;
+}
+
+.hero .container .cta > img {
+  width: clamp(100px, 35%, 135px);
+}
+
+/* Section Testimoni */
+.testimoni {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.testimoni .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimoni .container .card {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimoni .container .card > div {
+  display: flex;
+  width: 240px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-direction: column;
+  /* background-color: bisque; */
+  padding: 30px 20px 20px 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimoni .container .card div > h4 {
+  font-size: var(--text-para);
+}
+
+.testimoni .container .card div > p {
+  font: var(--text-span);
+}
+
+.testimoni .container .card div > img {
+  width: 75px;
+}
+
+.testimoni .container .teks {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimoni .container .teks > p {
+  color: var(--primary-color);
+  font-size: var(--text-span);
+  font-weight: 600;
+}
+
+.testimoni .container .teks > h2 {
+  text-align: center;
+  font-size: var(--text-sub-heading);
+  font-weight: 700;
+}
+
+/* Section Fakta */
+.fakta {
+  background-color: var(--bg-color);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.fakta .container {
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.fakta .container .teks {
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fakta .container .teks > p:nth-child(1) {
+  color: var(--primary-color);
+  font-size: var(--text-span);
+  font-weight: 600;
+}
+
+.fakta .container .teks > h2 {
+  font-size: var(--text-sub-heading);
+}
+
+.fakta .container .teks > p:nth-child(3) {
+  font-size: var(--text-para);
+}
+
+.fakta .container .teks > ul {
+  padding-left: 20px;
+}
+
+.fakta .container .teks ul > li {
+  font-size: var(--text-para);
+}
+
+.fakta .container .gambar {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+}
+
+.fakta .container .gambar > img {
+  width: 60%;
+}
+
+/* Section Keuntungan */
+.keuntungan {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.keuntungan .container {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.keuntungan .container .gambar {
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+}
+
+.keuntungan .container .gambar > img {
+  width: 60%;
+}
+
+.keuntungan .container .teks {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.keuntungan .container .teks > p:nth-child(1) {
+  color: var(--primary-color);
+  font-size: var(--text-span);
+  font-weight: 600;
+}
+
+.keuntungan .container .teks > h2 {
+  font-size: var(--text-sub-heading);
+}
+
+.keuntungan .container .teks > p:nth-child(3) {
+  font-size: var(--text-para);
+}
+
+.keuntungan .container .teks > p:nth-child(4) {
+  font-size: var(--text-para);
+}
+
+.kerugian {
+  background-color: var(--bg-color);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.kerugian .container {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.kerugian .container .gambar {
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+}
+
+.kerugian .container .gambar > img {
+  width: 60%;
+}
+
+.kerugian .container .teks {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kerugian .container .teks > p:nth-child(1) {
+  color: var(--primary-color);
+  font-size: var(--text-span);
+  font-weight: 600;
+}
+
+.kerugian .container .teks > h2 {
+  font-size: var(--text-sub-heading);
+}
+
+.kerugian .container .teks > p:nth-child(3) {
+  font-size: var(--text-para);
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+}
+
+footer .container {
+  /* background-color: aqua; */
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer .container > p {
+  padding-top: 20px;
+  font-size: var(--text-para);
+  text-align: center;
+}
+
+footer .container .footer {
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer .container .footer .teks {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container .footer .teks > a {
+  text-decoration: none;
+  background-color: white;
+  padding: 8px 15px;
+  color: var(--primary-color);
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+footer .container .footer .teks > p {
+  font-size: var(--text-para);
+}
+
+footer .container p > a {
+  text-decoration: none;
+}
+
+footer .container .footer .teks > a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* footer .container .footer .gambar {
+  background-color: orange;
+} */
+
+footer .container .footer .gambar > img {
+  width: 45%;
+}
+
+
+
+
+
+/* Tampilan Tablet atau iPad */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .wrap {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0px 96px;
+  }
+
+  /* Section Hero */
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero .container {
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .hero .container .cta {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    text-align: left;
+    width: 60%;
+  }
+
+  .hero .container .gambar {
+    width: 40%;
+  }
+
+  .hero .container .gambar > img {
+    width: 100%;
+  }
+
+  /* Section Testimoni */
+  .testimoni {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .testimoni .container {
+    /* background-color: aqua; */
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .testimoni .container .card {
+    /* background-color: aquamarine; */
+    flex-direction: row;
+    width: 60%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .testimoni .container .card > div {
+    width: 45%;
+  }
+
+  .testimoni .container .teks {
+    align-items: start;
+    width: 35%;
+  }
+
+  .testimoni .container .teks > h2 {
+    text-align: left;
+  }
+
+  /* Section Fakta */
+  .fakta {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+
+  .fakta .container {
+    flex-direction: row;
+  }
+
+  .fakta .container .teks {
+    width: 50%;
+  }
+
+  .fakta .container .gambar {
+    width: 50%;
+  }
+
+  .fakta .container .gambar > img {
+    width: 100%;
+  }
+
+  /* Section Keuntungan */
+  .keuntungan {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+
+  .keuntungan .container {
+    flex-direction: row;
+  }
+
+  .keuntungan .container .gambar {
+    width: 50%;
+  }
+
+  .keuntungan .container .teks {
+    width: 50%;
+    text-align: left;
+    justify-content: start;
+  }
+
+  .keuntungan .container .gambar > img {
+    width: 100%;
+  }
+
+  /* Section Kerugian */
+  .kerugian {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .kerugian .container {
+    flex-direction: row;
+  }
+
+  .kerugian .container .teks {
+    width: 50%;
+    justify-content: start;
+    text-align: left;
+  }
+
+  .kerugian .container .gambar {
+    width: 50%;
+  }
+
+  .kerugian .container .gambar > img {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer .container .footer {
+    flex-direction: row;
+    /* background-color: violet; */
+    padding-bottom: 0px;
+  }
+
+  footer .container .footer .teks {
+    align-items: start;
+    width: 70%;
+  }
+
+  footer .container .footer .gambar {
+    width: 30%;
+  }
+
+  footer .container .footer .teks > p {
+    text-align: left;
+  }
+}
+
+
+
+
+
+/* Tampilan Laptop */
+@media (min-width: 1024px) {
+  .hero .container .gambar {
+    width: 60%;
+  }
+
+  .hero .container .teks {
+    width: 40%;
+  }
+
+  .hero .container .gambar > img {
+    width: 90%;
+  }
+
+  .fakta .container .gambar > img {
+    width: 60%;
+  }
+
+  .keuntungan .container .gambar > img {
+    width: 60%;
+  }
+
+  .kerugian .container .gambar > img {
+    width: 60%;
+  }
+}
+
+
+
+
+
+/* Tampilan Desktop */
+@media (min-width: 1280px) {
+  .fakta .container .gambar > img {
+    width: 50%;
+  }
+
+  .keuntungan .container .gambar > img {
+    width: 50%;
+  }
+
+  .kerugian .container .gambar > img {
+    width: 50%;
+  }
+
+  .testimoni .container .card > div {
+    width: 35%;
+  }
+}
